@@ -5,7 +5,8 @@ body {
   min-width: 320px;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background: #000;
+  background: #000;
+  min-height: 100%;
 }
 
 @tailwind base;
@@ -21,22 +22,51 @@ a {
   box-sizing: border-box;
 }
 
-@layer components{
+@layer components {
   .center {
     @apply flex justify-center items-center;
   }
+
+  .shadow-gdnt {
+    @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500;
+  }
+
+  .boxblock {
+    border-radius: 6px;
+    animation: 3s linear infinite boxShadow;
+  }
+
+  @keyframes boxShadow {
+    from {
+      box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    }
+
+    50% {
+      box-shadow: 3px 3px 15px 5px #8E5CFF, -7px 3px 15px 5px #80C7FF, -5px -3px 15px 5px #FF616B, 10px -3px 15px 5px #FFE488, 10px 8px 15px 7px #E488FF, -8px 8px 15px 7px #8CFF85, -8px -5px 27px 1px #FF616B, 3px 3px 15px 5px rgba(0, 0, 0, 0);
+    }
+
+    to {
+      box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    }
+  }
 }
 
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
   display: none;
 }
 
+/* ========= */
+
+/* ========= */
+
 
 /* ========================= hamburger =========================== */
-:root{
+:root {
   --ham-width: 30px;
   --ham-bgc: #ed2fb3;
 }
+
 .ham {
   width: var(--ham-width);
   height: 3px;
@@ -121,4 +151,3 @@ a {
 }
 
 /* ========================= hamburger end =========================== */
-
