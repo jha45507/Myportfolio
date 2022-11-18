@@ -25,7 +25,7 @@ function Navbar() {
 
     return (
         <>
-            <header ref={headeRef} className=' w-screen relative md:min-w-[320px] bg-black md:sticky md:top-0 h-16 overflow-hidden transition-all z-10'>
+            <header ref={headeRef} className=' w-screen relative min-w-[375px] bg-black md:sticky md:top-0 h-16 overflow-hidden transition-all z-10'>
                 <div onClick={hamclick} className='md:hidden w-5 h-5 absolute top-5 right-5'>
                     <div className='ham' ref={hamRef}></div>
                 </div>
@@ -46,7 +46,7 @@ function Navbar() {
                     </ul>
                     <ul className='py-0 center my-5 md:my-0'>
                         <li onClick={closeNavbar} className=' rounded-3xl text-black font-bold px-3 py-1 bg-gradient-to-r from-purple-500 to-pink-500 '>
-                            <Link href={"/contect"} >Contact Us</Link>
+                            <Link href={"/contact"} >Contact Us</Link>
                         </li>
                     </ul>
                 </nav>
