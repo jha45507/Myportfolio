@@ -25,8 +25,8 @@ function Navbar() {
 
     return (
         <>
-            <header ref={headeRef} className=' w-screen relative min-w-[375px] bg-black md:sticky md:top-0 h-16 overflow-hidden transition-all z-10'>
-                <div onClick={hamclick} className='md:hidden w-5 h-5 absolute top-5 right-5'>
+            <header ref={headeRef} className=' w-screen absolute   min-w-[375px] bg-black md:sticky md:top-0 h-16 overflow-hidden transition-all z-10'>
+                <div onClick={hamclick} className='md:hidden w-5 h-5 absolute top-5 right-5 scale-75'>
                     <div className='ham' ref={hamRef}></div>
                 </div>
                 <nav className='md:px-5 text-white md:flex md:justify-between bg-black md:py-4 flex flex-col md:flex-row '>
