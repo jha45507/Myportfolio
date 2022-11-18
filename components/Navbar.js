@@ -41,7 +41,7 @@ function Navbar() {
                             <span onClick={closeNavbar} className='hover:border-white w-fit border-b-2 border-transparent ' ><Link href={"/"} >Home</Link></span>
                             <span onClick={closeNavbar} className='hover:border-white w-fit border-b-2 border-transparent ' ><Link href={"/project"} >Projects</Link></span>
                             <span onClick={closeNavbar} className='hover:border-white w-fit border-b-2 border-transparent ' ><Link href={"/about"} >About Us</Link></span>
-                            <span onClick={closeNavbar} className='hover:border-white w-fit border-b-2 border-transparent ' ><Link href={"/skil"} >Skills</Link></span>
+                            <span onClick={closeNavbar} className='hover:border-white w-fit border-b-2 border-transparent ' ><Link href={"/skills"} >Skills</Link></span>
                         </li>
                     </ul>
                     <ul className='py-0 center my-5 md:my-0'>

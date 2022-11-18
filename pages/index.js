@@ -1,13 +1,14 @@
 import HomePage from '../components/HomePage'
-import Layout from '../components/Layout'
-import Project from '../components/Project'
+import Project from './project'
 import Contact from './contact'
+import Skills from './skills'
 export default function Home() {
   return (
-    <Layout>
+    <>
       <HomePage />
-      <Project/>
-      <Contact/>
-    </Layout>
+      <Project />
+      <Skills/>
+      <Contact />
+    </>
   )
 }
