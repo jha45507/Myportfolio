@@ -26,7 +26,7 @@ function Skills() {
             <div id="number">65%</div>
           </div>
         </div>
-        <svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='160px' height='160px'>
+        <svg xmlns='http://www.w3.org/2000/svg' className='absolute top-0 left-0' version='1.1' width='160px' height='160px'>
           <defs>
             <linearGradient id='gColor'>
               <stop offset={'0%'} stopColor={'#DA22FF'} />
