@@ -4,7 +4,7 @@ import RoundSkillBar from '../components/RoundSkillBar';
 function Skills() {
   return (
     <>
-      <div className='space-y-20 pt-100 md:pt-0 '>
+      <div className='space-y-20 pt-[150px] mb-24 md:pt-16 '>
         <h1 className='bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent text-3xl md:text-4xl lg:text-5xl font-bold xl:text-6xl py-2 text-center'> My Skills </h1>
         <div className='center text-2xl font-bold space-y-20 lg:space-y-0 lg:space-x-20 flex-col lg:flex-row' >
           <div className=''>
