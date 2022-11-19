@@ -1,42 +1,69 @@
-import React, { useEffect } from 'react'
 
+import RoundSkillBar from '../components/RoundSkillBar';
+// style={{position: 'absolute', top: '0', left: '0' }}
 function Skills() {
-
-  useEffect(() => {
-   
-    let number = document.getElementById('number');
-    let counter =0
-    setInterval(() => {
-      if (counter == 65) {
-        clearInterval;
-      }else{
-        counter += 1;
-        number.innerHTML = `${counter}`
-      }
-    }, 30);
-   
-  }, [])
-  
-
   return (
-    <div className='center h-[100vh] text-2xl font-bold bg-white'>
-      <div className='skill'>
-        <div className='outer'>
-          <div className='inner'>
-            <div id="number">65%</div>
+    <>
+      <div className='space-y-20 pt-100 md:pt-0 '>
+        <h1 className='bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent text-3xl md:text-4xl lg:text-5xl font-bold xl:text-6xl py-2 text-center'> My Skills </h1>
+        <div className='center text-2xl font-bold space-y-20 lg:space-y-0 lg:space-x-20 flex-col lg:flex-row' >
+          <div className=''>
+            <p className='text-white'>Html</p>
+            <RoundSkillBar value={75} />
+          </div>
+          <div>
+            <p className='text-white'>CSS</p>
+            <RoundSkillBar value={75} />
+          </div>
+          <div>
+            <p className='text-white'>Bootstrap</p>
+            <RoundSkillBar value={75} />
+          </div>
+          <div>
+            <p className='text-white'>Tailwind</p>
+            <RoundSkillBar value={75} />
           </div>
         </div>
-        <svg xmlns='http://www.w3.org/2000/svg' className='absolute top-0 left-0' version='1.1' width='160px' height='160px'>
-          <defs>
-            <linearGradient id='gColor'>
-              <stop offset={'0%'} stopColor={'#DA22FF'} />
-              <stop offset={'100%'} stopColor={'#9733EE'} />
-            </linearGradient>
-          </defs>
-          <circle cx="80" cy="80" r="70" strokeLinecap='round' />
-        </svg>
+
+        <div className='center text-2xl font-bold space-y-20 lg:space-y-0 lg:space-x-20 flex-col lg:flex-row '>
+          <div>
+            <p className='text-white'>JavaScript</p>
+            <RoundSkillBar value={60} />
+          </div>
+          <div>
+            <p className='text-white'>Next Js</p>
+            <RoundSkillBar value={65} />
+          </div>
+          <div>
+            <p className='text-white'>Rest Api</p>
+            <RoundSkillBar value={50} />
+          </div>
+          <div>
+            <p className='text-white'>Git</p>
+            <RoundSkillBar value={45} />
+          </div>
+        </div>
+
+        <div className='center text-2xl font-bold space-y-20 lg:space-y-0 lg:space-x-20 flex-col lg:flex-row '>
+          <div>
+            <p className='text-white'>MongoDB</p>
+            <RoundSkillBar value={50} />
+          </div>
+          <div>
+            <p className='text-white'>Express Js</p>
+            <RoundSkillBar value={50} />
+          </div>
+          <div>
+            <p className='text-white'>React Js</p>
+            <RoundSkillBar value={60} />
+          </div>
+          <div>
+            <p className='text-white'>Node Js</p>
+            <RoundSkillBar value={50} />
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 

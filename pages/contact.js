@@ -13,14 +13,19 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function Contact() {
+    const [text, setText] = useState(
+        {name: "", email: "", subject: "", textarea: "" }
+    )
     const submit_now = (e) => {
         e.preventDefault()
-        setText({name: "", email: "", subject: "", textarea: "" });
         toast.success("form Submited");
+        setTimeout(() => {
+            setText({name: "", email: "", subject: "", textarea: "" });
+        }, 100);
+        console.log(text)
     }
-    const [text, setText] = useState('')
     const onChange = (e) => {
-        setText({ [e.target.name]: e.target.value })
+        setText({...text, [e.target.name]: e.target.value })
     }
 
     return (
@@ -101,7 +106,7 @@ function Contact() {
                             </div>
 
                             <div className="">
-                                <button disabled={text.length === 0} type="button" className='w-full shadow-gdnt m-auto md:m-0 scale-[0.8] py-2 text-xl font-bold text-white rounded-full center relative' onClick={submit_now} ><p className='mr-8'>Submit Now</p>
+                                <button disabled={text.name.length <=1} type="button" className='w-full shadow-gdnt m-auto md:m-0 scale-[0.8] py-2 text-xl font-bold text-white rounded-full center relative' onClick={submit_now} ><p className='mr-8'>Submit Now</p>
                                     <CgArrowLongRight className='bg-white rounded-full text-black absolute p-2 right-1  w-10 h-10' />
                                 </button>
 

@@ -20,7 +20,7 @@ export default function Project() {
                                 <img className='border border-[#06b6d4] lg:p-2 sm:w-4/4 lg:w-auto p-5 rounded-2xl' src="/news.png" alt="news" />
                             </a>
                         </div>
-                        <p className=' text-white my-3 text-justify ' >this is website to click and check-out this is image my project to reach links</p>
+                        <p className=' text-white my-3 text-justify ' >  </p>
                     </div>
 
                     <div className='mx-auto lg:mx-10 border sm:w-3/4 border-pink-300 px-5 py-5 rounded-lg projectbox mb-20 '>

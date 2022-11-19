@@ -12,7 +12,7 @@ function HomePage() {
 
             <h1 className='bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent text-3xl md:text-4xl lg:text-5xl font-bold xl:text-6xl py-2 2xl:text-center'> Hi,<br /> I Am Rahul Jha <br />Full Stack / MERN <br /> Stack Developer </h1>
             <h3 className='text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold sm:text-center '>Welcome to my portfolio website</h3>
-            <p className='text-white mt-2 mb-5 sm:text-center xl:text-xl '> I have six months plush of self-work experience. 
+            <p className='text-white mt-2 mb-5 sm:text-center xl:text-xl '> I have six months of self-work experience. 
             </p>
 
             <Link href={'/contact'}>
