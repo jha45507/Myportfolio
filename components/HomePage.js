@@ -6,7 +6,7 @@ function HomePage() {
     <>
       <div className='container grid md:grid-cols-2 md:h-[89vh] md:flex-row md:py-10 m-auto min-w-[375px]'>
 
-        <div className='center w-full h-screen md:h-full'>
+        <div className='center w-full h-screen md:h-full '>
 
           <div className=' md:scale-100 sm:scale-125 '>
 
@@ -19,15 +19,12 @@ function HomePage() {
               <button className='w-full shadow-gdnt relative md:m-0 md:scale-100 scale-[0.8] text-xl sm:text-2xl text-white font-bold rounded-full center m-auto px-8 py-3 md:py-1 '><p className='mr-8'>Contect Me</p>
                 <CgArrowLongRight className='bg-white rounded-full text-black absolute p-2 right-1 md:w-10 md:h-9 w-12 h-12' /></button>
             </Link>
-
           </div>
-
         </div>
 
+
         <div className=' w-3/4 center md:w-[55%] m-auto my-24 md:my-10 '>
-
           <img className='w-80 boxblock rounded-xl' src="/rahul-img.jpg" alt="" />
-
         </div>
 
       </div>

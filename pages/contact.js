@@ -14,10 +14,8 @@ function Contact() {
         <div className='center md:h-[90vh]'>
             <div className='flex flex-col justify-center md:flex-row min-w-[375px] w-[90%]'>
 
-                <div className=' flex justify-center w-full md:w-2/4'>
-
+                <div className=' flex justify-center w-full md:w-2/4 mt-20 md:mt-0 '>
                     <div className=' sm:scale-100 scale-90 w-[75%] md:w-3/4'>
-
                         <h1 className='bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent text-3xl md:text-4xl lg:text-5xl font-bold xl:text-6xl py-2 2xl:text-center'> Reach Us Hare!</h1>
                         <p className='text-white text-lg my-5'>This contact us page connects to the database API and saves your information to my database.</p>
 
@@ -38,7 +36,6 @@ function Contact() {
                             <p className='text-white mb-5 mx-10'> +91 82239 - 83904 / +91 88392 - 42653 </p>
                         </span>
                     </div>
-
                 </div>
 
                 <div className='md:w-2/4 w-full flex justify-center'>

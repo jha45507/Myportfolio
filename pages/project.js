@@ -3,15 +3,15 @@ import React from 'react'
 
 export default function Project() {
     return (
-        <div className=' flex flex-col justify-center my-20 w-full h-full min-w-[375px]'>
-            <div>
-                <h1 className='bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent text-3xl md:text-4xl lg:text-5xl font-bold xl:text-6xl py-2 text-center my-5'>Project
-                <span className='text-3xl md:text-4xl lg:text-5xl font-bold xl:text-6xl py-2 text-center text-white'> I have done</span></h1>
+        <div className=' flex flex-col justify-center w-full h-full min-w-[375px]'>
+            <div className='mb-28 mt-20'>
+                <h1 className=' py-2 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent text-3xl md:text-4xl lg:text-5xl font-bold xl:text-6xl text-center'>Project
+                <span className='py-2 text-3xl md:text-4xl lg:text-5xl font-bold xl:text-6xl text-center text-white'> I have done</span></h1>
             </div>
 
             <div className='flex flex-col justify-center items-center mx-10 '>
 
-                <div className='lg:flex my-10 w-full'>
+                <div className='lg:flex w-full'>
 
                     <div className=' mx-auto lg:mx-10 border sm:w-3/4 border-pink-300 px-5 py-5 rounded-lg projectbox mb-20'>
 
