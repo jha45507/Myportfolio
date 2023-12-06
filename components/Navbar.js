@@ -32,8 +32,15 @@ function Navbar() {
                 <nav className='md:px-5 text-white md:flex md:justify-between bg-black md:py-4 flex flex-col md:flex-row '>
                     <ul className='center py-4 md:py-0 bg-black'>
                         <li className='space-y-5'>
-                            <Link href={"/"}><span onClick={closeNavbar} className='center space-x-2 text-2xl font-bold sm:absolute md:relative sm:left-5 md:left-0' ><ImUser className='text-purple-500' />
-                                <h1 className='bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent ' >Rahul Jha</h1></span></Link>
+                            {/* <Link href={"/"} onClick={closeNavbar}> */}
+                                <span  className='center space-x-2 text-2xl font-bold sm:absolute md:relative sm:left-5 md:left-0' >
+
+                                    <ImUser className='text-purple-500' />
+                                    <h1 className='bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent ' >
+                                        Rahul Jha
+                                    </h1>
+                                </span>
+                            {/* </Link> */}
                         </li>
                     </ul>
                     <ul className='center space-y-5 text-lg sm:mt-8 md:mt-0'>

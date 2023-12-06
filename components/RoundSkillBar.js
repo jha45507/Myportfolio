@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-function RoundSkillBar({ value, from, to }) {
+function RoundSkillBar({ value, from, to, text }) {
   const circleRef = useRef();
   const numberRef = useRef();
   const newValue = 450 - (450 * value) / 100;
@@ -24,21 +24,22 @@ function RoundSkillBar({ value, from, to }) {
         } else {
           x -= 1;
           circleRef.current.style.strokeDashoffset = x;
-          
+
         }
       }, 1);
     }
   }, []);
 
   return (
-    <div >
+    <div className="flex flex-col items-center justify-start mx-10 my-10">
+      <p className='text-white'>{text}</p>
       <div style={style.skill}>
         <div style={style.outer}>
           <div style={style.inner}>
             <div ref={numberRef} ></div>
           </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px" style={{position: 'absolute', top: '0', left: '0' }} >
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px" style={{ position: 'absolute', top: '0', left: '0' }} >
           <defs>
             <linearGradient id="gColor">
               <stop offset={"0%"} stopColor={from ?? "#DA22FF"} />

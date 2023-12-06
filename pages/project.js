@@ -1,76 +1,129 @@
-import Link from 'next/link'
 import React from 'react'
-
+import MyProject from '../components/common/Project'
 export default function Project() {
     return (
         <div className=' flex flex-col justify-center w-full h-full min-w-[375px]'>
             <div className='mb-28 mt-20'>
-                <h1 className=' py-2 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent text-3xl md:text-4xl lg:text-5xl font-bold xl:text-6xl text-center'>Project
-                <span className='py-2 text-3xl md:text-4xl lg:text-5xl font-bold xl:text-6xl text-center text-white'> I have done</span></h1>
+                <h1 className=' py-2 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent text-3xl md:text-4xl lg:text-5xl font-bold xl:text-6xl text-center'>Project I have done
+                </h1>
             </div>
-
-            <div className='flex flex-col justify-center items-center mx-10 '>
-
-                <div className='lg:flex w-full'>
-
-                    <div className=' mx-auto lg:mx-10 border sm:w-3/4 border-pink-300 px-5 py-5 rounded-lg projectbox mb-20'>
-
-                        <div className=''>
-                            <a target="_blank" rel="noopener noreferrer" href={'https://mynewsone.netlify.app'} >
-                                <img className='border border-[#06b6d4] lg:p-2 sm:w-4/4 lg:w-auto p-5 rounded-2xl' src="/news.png" alt="news" />
-                            </a>
-                        </div>
-                        <p className=' text-white my-3 text-justify'> <span className='font-bold'>Tech</span> Strapi Api, ReactJs, NodeJs, JavaScript</p>
-                        <p className='text-white my-3 text-justify'> <span className='font-bold'>Functionality</span> Infinite Scroller, Loading bar, Next and Previous button, Design with Card, and click to ReadMore button to open a particular post.</p>
-                    </div>
-
-                    <div className='mx-auto lg:mx-10 border sm:w-3/4 border-pink-300 px-5 py-5 rounded-lg projectbox mb-20'>
-
-                        <div className=''>
-                            <a target="_blank" rel="noopener noreferrer" href={'https://with-react-text-editor.netlify.app'} >
-                                <img className='border border-[#06b6d4] lg:p-2 sm:w-4/4 lg:w-auto p-5  rounded-2xl' src="/editor.png" alt="editer" />
-                            </a>
-                        </div>
-                        <p className='text-white my-3 text-justify'> <span className='font-bold'>Tech</span> ReactJs, JavaScript, NodeJs, </p>
-                        <p className='text-white my-3 text-justify'> <span className='font-bold'>Functionality</span> with text can be uppercase, lowercase, reverse, copy, clear extra spaces, capital first letter, count words, count characters, and show preview.</p>
-                    </div>
-
-                    <div className='mx-auto lg:mx-10 border sm:w-3/4 border-pink-300 px-5 py-5 rounded-lg projectbox mb-20'>
-                        <div className=''>
-                            <a target="_blank" rel="noopener noreferrer" href={'https://soft-notes-book-with-mern.netlify.app'} >
-                                <img className='border border-[#06b6d4] lg:p-2 sm:w-4/4 lg:w-auto p-5  rounded-2xl' src="/notes.png" alt="notes" />
-                            </a>
-                        </div>
-                        <p className='text-white my-3 text-justify'> <span className='font-bold'>Tech</span> MongoDB, ExpressJs, ReactJs, NodeJs (MERN) </p>
-                        <p className='text-white my-3 text-justify'> <span className='font-bold'>Functionality</span> create notes, update notes, read notes, delete notes, and with an authentication token save notes.</p>
-                    </div>
-
+            <div className='md:flex justify-center items-center m-auto'>
+                <div className='md:flex w-full flex-wrap text-center justify-center items-center'>
+                    <MyProject
+                        name="Gifola"
+                        img={'/gifola.jpeg'}
+                        alt="App"
+                        href='available on play store (Gifola)'
+                        tech=" React-Native, JavaScript, CSS, axios and using other libraries"
+                        func="Add Pagination, Get, Post, Put, Patch, Apis Integration, Google Map integration, QR Code scan, NFC scan,
+                        Filter function, Map functions, FlatList, VirtualizedList, global variable, Modals, and Common Components."
+                    />
+                    <MyProject
+                        name="Sudofire"
+                        img={'/sudofire.png'}
+                        alt="sudofire"
+                        href=' www.sudofire.com'
+                        tech=" Next Js, Tailwind CSS, CSS, JavaScript, Fetch Api, reCAPTCHA v3, Using other Libraries."
+                        func=" APIs integration, mail integration, Animation, Smooth UI, reCAPTCHA v3, Fetch Api, Slider, Common
+                        components."
+                    />
+                    <MyProject
+                        name="Seed Funding"
+                        img={'/seedfunding.png'}
+                        alt="seed funding"
+                        href='https://seedfunding.nrdc.in/'
+                        tech="  JavaScript, jQuery, Html, CSS, Regex, Bootstrap."
+                        func=" Validations, Regex, Form Sets, Get, Post, Put, Patch, APIs Integration, Paginations and form add and delete
+                        functionality, Create PDF UI."
+                    />
+                    <MyProject
+                        name="Engage"
+                        img={'/engage.png'}
+                        alt="engage"
+                        href='https://engage.eta.in/login/'
+                        tech=" JavaScript, jQuery, Html, CSS, Bootstrap."
+                        func="  Validations, Regex, Form Sets, Get, Post, Put, Patch, APIs Integration, Paginations, form add and delete
+                        functionality, deal with data, Regex, Fetch API, Ajax and Dom manipulation."
+                    />
+                    <MyProject
+                        name="Prosmyle"
+                        img={'/prosmyle.png'}
+                        alt="Prosmyle"
+                        href='www.prosmyle.com'
+                        tech=" Html, CSS, JavaScript and PHP, Bootstrap."
+                        func=" Smooth UI Interface, Mail integration in PHP and create Testimonials."
+                    />
+                    <MyProject
+                        name="S.R. Marine Services"
+                        img={'/marine.jpg'}
+                        alt="S.R. Marine Services (OPC) Pvt. Ltd"
+                        href='www.srmsopc.com'
+                        tech=" html, CSS and JavaScript."
+                        func=" Create the UI UX of the project"
+                    />
+                    <MyProject
+                        name="Biryani Queen"
+                        img={'/briyani.png'}
+                        alt="Biryani Queen"
+                        href=' www.biryaniqueen.com'
+                        tech=" html, CSS and JavaScript."
+                        func=" Make the UI UX of the project"
+                    />
+                    <MyProject
+                        name="FYP"
+                        img={'/fyp.png'}
+                        alt="Super Money App & Card for Teens and Kids"
+                        href='https://www.fypmoney.in/'
+                        tech=" html, CSS, jQuery and JavaScript."
+                        func=" Create the UI UX of the project."
+                    />
                 </div>
-
-                <div className='lg:flex mx-5 lg:my-10 lg:w-[60%] w-full'>
-                    <div className='mx-auto lg:mx-10 border sm:w-3/4 border-pink-300 px-5 py-5 rounded-lg projectbox mb-20'>
-                        <div className=''>
-                            <a target="_blank" rel="noopener noreferrer" href={'https://events-calendar-javascript-project.netlify.app'} >
-                                <img className='border border-[#06b6d4] lg:p-2 sm:w-4/4 lg:w-auto p-5  rounded-2xl' src="/calendar.png" alt="calendar" />
-                            </a>
-                        </div>
-                        <p className='text-white my-3 text-justify'> <span className='font-bold'>Tech</span> JavaScript, Bootstrap</p>
-                        <p className='text-white my-3 text-justify'> <span className='font-bold'>Functionality</span> In this events calendar Add Entries, Read Entries, Delete Entries, and Save Entries with Start date, End date, and Time. They save to local storage.</p>
-                    </div>
-
-                    <div className='mx-auto lg:mx-10 border sm:w-3/4 border-pink-300 px-5 py-5 rounded-lg projectbox mb-20 '>
-                        <div className=''>
-                            <a target="_blank" rel="noopener noreferrer" href={'https://analogclock-html-css-javascript.netlify.app'} >
-                                <img className='border border-[#06b6d4] lg:p-2 sm:w-4/4 lg:w-auto p-5  rounded-2xl' src="/clock.png" alt="clock" />
-                            </a>
-                        </div>
-                        <p className='text-white my-3 text-justify'> <span className='font-bold'>Tech</span> Html, Css, JavaScript </p>
-                        <p className='text-white my-3 text-justify'> <span className='font-bold'>Functionality</span> both functions are the Digital clock and can wall clock and set the alarm.</p>
-                    </div>
-                </div>
-
             </div>
-
+            <h1 className='py-2 text-3xl md:text-4xl lg:text-5xl font-bold xl:text-6xl text-center text-white mb-20'>Personal Project</h1>
+            <div className='md:flex justify-center items-center m-auto'>
+                <div className='md:flex w-full flex-wrap text-center justify-center items-center'>
+                    <MyProject
+                        name="News"
+                        img={'/news.png'}
+                        alt="news"
+                        href='https://mynewsone.netlify.app'
+                        tech=" Strapi Api, ReactJs, NodeJs, JavaScript"
+                        func="Infinite Scroller, Loading bar, Next and Previous button, Design with Card, and click to ReadMore button to open a particular post."
+                    />
+                    <MyProject
+                        name="Text Editor"
+                        img={'/editor.png'}
+                        alt="editer"
+                        href='https://with-react-text-editor.netlify.app'
+                        tech=" ReactJs, JavaScript, NodeJs,"
+                        func=" with text can be uppercase, lowercase, reverse, copy, clear extra spaces, capital first letter, count words, count characters, and show preview."
+                    />
+                    <MyProject
+                        name="Notes"
+                        img={'/notes.png'}
+                        alt="notes"
+                        href='https://soft-notes-book-with-mern.netlify.app'
+                        tech=" MongoDB, ExpressJs, ReactJs, NodeJs (MERN)"
+                        func=" create notes, update notes, read notes, delete notes, and with an authentication token save notes."
+                    />
+                    <MyProject
+                        name="Event Calendar"
+                        img={'/calendar.png'}
+                        alt="calendar"
+                        href='https://events-calendar-javascript-project.netlify.app'
+                        tech=" JavaScript, Bootstrap"
+                        func=" In this events calendar Add Entries, Read Entries, Delete Entries, and Save Entries with Start date, End date, and Time. They save to local storage."
+                    />
+                    <MyProject
+                        name="Clock"
+                        img={'/clock.png'}
+                        alt="clock"
+                        href='https://analogclock-html-css-javascript.netlify.app'
+                        tech=" Html, Css, JavaScript"
+                        func=" both functions are the Digital clock and can wall clock and set the alarm."
+                    />
+                </div>
+            </div>
         </div>
     )
 }

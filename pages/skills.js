@@ -4,63 +4,37 @@ import RoundSkillBar from '../components/RoundSkillBar';
 function Skills() {
   return (
     <>
-      <div className='space-y-20 pt-[150px] mb-24 md:pt-16 '>
+      <div className='space-y-20 pt-[150px] mb-24 md:pt-16 w-full'>
         <h1 className='bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent text-3xl md:text-4xl lg:text-5xl font-bold xl:text-6xl py-2 text-center'> My Skills </h1>
-        <div className='center text-2xl font-bold space-y-20 lg:space-y-0 lg:space-x-20 flex-col lg:flex-row' >
-          <div className=''>
-            <p className='text-white'>Html</p>
-            <RoundSkillBar value={75} />
-          </div>
-          <div>
-            <p className='text-white'>CSS</p>
-            <RoundSkillBar value={75} />
-          </div>
-          <div>
-            <p className='text-white'>Bootstrap</p>
-            <RoundSkillBar value={75} />
-          </div>
-          <div>
-            <p className='text-white'>Tailwind</p>
-            <RoundSkillBar value={75} />
-          </div>
-        </div>
+        <div className='center text-2xl font-bold flex flex-wrap' >
+          <RoundSkillBar value={75} text="Html" />
+          <RoundSkillBar value={75} text="Css" />
+          <RoundSkillBar value={60} text="JavaScript" />
+          <RoundSkillBar value={60} text="jQuery" />
+          <RoundSkillBar value={75} text="Fetch API" />
 
-        <div className='center text-2xl font-bold space-y-20 lg:space-y-0 lg:space-x-20 flex-col lg:flex-row '>
-          <div>
-            <p className='text-white'>JavaScript</p>
-            <RoundSkillBar value={60} />
-          </div>
-          <div>
-            <p className='text-white'>Next Js</p>
-            <RoundSkillBar value={65} />
-          </div>
-          <div>
-            <p className='text-white'>Rest Api</p>
-            <RoundSkillBar value={50} />
-          </div>
-          <div>
-            <p className='text-white'>Git</p>
-            <RoundSkillBar value={45} />
-          </div>
-        </div>
+          <RoundSkillBar value={70} text="React Js" />
+          <RoundSkillBar value={70} text="Next Js" />
+          <RoundSkillBar value={70} text="React-Native" />
+          <RoundSkillBar value={50} text="Node Js" />
+          <RoundSkillBar value={75} text="Axios" />
 
-        <div className='center text-2xl font-bold space-y-20 lg:space-y-0 lg:space-x-20 flex-col lg:flex-row '>
-          <div>
-            <p className='text-white'>MongoDB</p>
-            <RoundSkillBar value={50} />
-          </div>
-          <div>
-            <p className='text-white'>Express Js</p>
-            <RoundSkillBar value={50} />
-          </div>
-          <div>
-            <p className='text-white'>React Js</p>
-            <RoundSkillBar value={60} />
-          </div>
-          <div>
-            <p className='text-white'>Node Js</p>
-            <RoundSkillBar value={50} />
-          </div>
+          <RoundSkillBar value={75} text="Bootstrap" />
+          <RoundSkillBar value={75} text="Tailwind" />
+          <RoundSkillBar value={60} text="Mongoose" />
+          <RoundSkillBar value={50} text="Express Js" />
+          <RoundSkillBar value={50} text="Rest Api" />
+
+          <RoundSkillBar value={50} text="Redux" />
+          <RoundSkillBar value={50} text="React Redux" />
+          <RoundSkillBar value={50} text="Redux Toolkit" />
+          <RoundSkillBar value={50} text="MongoDB" />
+          <RoundSkillBar value={50} text="SQL" />
+
+          <RoundSkillBar value={75} text="Git" />
+          <RoundSkillBar value={75} text="Git-Hub" />
+          <RoundSkillBar value={75} text="Windows" />
+          <RoundSkillBar value={75} text="Vs Code" />
         </div>
       </div>
     </>
