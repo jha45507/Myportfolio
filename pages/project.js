@@ -22,7 +22,7 @@ export default function Project() {
                         name="Sudofire"
                         img={'/sudofire.png'}
                         alt="sudofire"
-                        href=' www.sudofire.com'
+                        href='https://www.sudofire.com/'
                         tech=" Next Js, Tailwind CSS, CSS, JavaScript, Fetch Api, reCAPTCHA v3, Using other Libraries."
                         func=" APIs integration, mail integration, Animation, Smooth UI, reCAPTCHA v3, Fetch Api, Slider, Common
                         components."
@@ -49,7 +49,7 @@ export default function Project() {
                         name="Prosmyle"
                         img={'/prosmyle.png'}
                         alt="Prosmyle"
-                        href='www.prosmyle.com'
+                        href='https://prosmyle.com/'
                         tech=" Html, CSS, JavaScript and PHP, Bootstrap."
                         func=" Smooth UI Interface, Mail integration in PHP and create Testimonials."
                     />
