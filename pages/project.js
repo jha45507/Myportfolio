@@ -57,7 +57,7 @@ export default function Project() {
                         name="S.R. Marine Services"
                         img={'/marine.jpg'}
                         alt="S.R. Marine Services (OPC) Pvt. Ltd"
-                        href='www.srmsopc.com'
+                        href='https://www.srmsopc.com'
                         tech=" html, CSS and JavaScript."
                         func=" Create the UI UX of the project"
                     />
@@ -65,7 +65,7 @@ export default function Project() {
                         name="Biryani Queen"
                         img={'/briyani.png'}
                         alt="Biryani Queen"
-                        href=' www.biryaniqueen.com'
+                        href='https://www.biryaniqueen.com'
                         tech=" html, CSS and JavaScript."
                         func=" Make the UI UX of the project"
                     />
